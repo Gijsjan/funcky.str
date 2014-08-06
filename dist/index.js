@@ -23,6 +23,12 @@
             }
           }
           return str.replace(/[^a-z0-9 -]/g, '').replace(/\s+|\-+/g, '-').replace(/^\-+|\-+$/g, '');
+        },
+        toElement: function() {
+          var div;
+          div = document.createElement('div');
+          div.innerHTML = str;
+          return div.childNodes;
         }
       };
     }
