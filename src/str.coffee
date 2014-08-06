@@ -27,4 +27,4 @@ module.exports =
 		toElement: ->
 			div = document.createElement('div')
 			div.innerHTML = str
-			div.childNodes
+			div.firstChild

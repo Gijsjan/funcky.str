@@ -12,3 +12,8 @@ gulp.task 'build', ->
     .pipe(streamify(uglify()))
     .pipe(rename(extname: '.min.js'))
     .pipe(gulp.dest("./dist"))
+
+gulp.task 'watch', ->
+	gulp.watch ['./src/str.coffee'], ['build']
+
+gulp.task 'default', ['watch']

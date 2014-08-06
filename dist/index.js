@@ -28,7 +28,7 @@
           var div;
           div = document.createElement('div');
           div.innerHTML = str;
-          return div.childNodes;
+          return div.firstChild;
         }
       };
     }
